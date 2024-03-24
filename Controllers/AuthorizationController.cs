@@ -274,6 +274,9 @@ namespace HospitalWebsiteApi.Controllers
                 return StatusCode(500, "An error occurred: " + ex.Message);
             }
         }
+
+
+
         [Authorize(Roles = "2")]
         [HttpDelete("DeleteUser/{userid}")]
         public async Task<IActionResult> DeleteUserData(int userid)

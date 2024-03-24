@@ -146,6 +146,9 @@ namespace HospitalWebsiteApi.Controllers
                 return BadRequest($"Error deleting appointment: {ex.Message}");
             }
         }
+
+
+
         [Authorize(Roles = "2")]
         [HttpDelete("admin_delete/{appointmentId}")]
         public async Task<IActionResult> DeleteAppointment_Admin(int appointmentId)

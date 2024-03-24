@@ -10,7 +10,6 @@ namespace HospitalWebsiteApi.Models
         [Required(ErrorMessage = "Password is requeired")]
         public string Password { get; set; }
 
-
         public int otpCode { get; set; }
 
 
