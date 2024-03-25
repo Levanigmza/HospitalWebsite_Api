@@ -5,7 +5,7 @@ namespace HospitalWebsiteApi.Models
         public string? Name { get; set; }
         public string? Surname { get; set; }
         public string? Email { get; set; }
-        public int? PersonalID { get; set; }
+        public Int64? PersonalID { get; set; }
 
         
     }

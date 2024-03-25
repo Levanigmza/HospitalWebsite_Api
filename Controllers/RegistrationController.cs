@@ -28,7 +28,7 @@ namespace HospitalWebsiteApi.Controllers
         {
             if (_userService.IsEmailRegistered(user.Email))
             {
-                return BadRequest("Error: Email is already registered!");
+                return StatusCode(409);
             }
             else
                 try

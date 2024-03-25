@@ -49,7 +49,13 @@ namespace HospitalWebsiteApi
              });
 
 
-            services.AddAuthorization();
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("DoubleRolePolicy", policy =>
+                {
+                    policy.RequireRole("0", "1");
+                });
+            });
             services.AddControllers();
 
             services.AddCors(options =>

@@ -98,7 +98,7 @@ namespace HospitalWebsiteApi.Controllers
 
 
 
-        [Authorize]
+        [Authorize(Policy = "DoubleRolePolicy")]
         [HttpDelete("delete/{appointmentId}")]
         public async Task<IActionResult> DeleteAppointment(int appointmentId)
 

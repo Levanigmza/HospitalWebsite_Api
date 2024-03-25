@@ -25,7 +25,7 @@ namespace HospitalWebsiteApi.Models
         [NotMapped]
         public string? PasswordHash { get; set; }
         [Column("PERSONALID")]
-        public int? PersonalID { get; set; }
+        public Int64? PersonalID { get; set; }
         [Column("ADDRESS")] 
         public string? Address { get; set; }
         [Column("PHONE")] 
